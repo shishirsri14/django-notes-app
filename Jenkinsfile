@@ -17,7 +17,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                docker_deploy("notes-app-container", "8000", "notes-app", "latest")
+                docker_deploy("notes-app-container", "8080", "notes-app", "latest")
             }
         }
     }
